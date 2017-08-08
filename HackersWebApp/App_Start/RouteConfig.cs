@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace CrossSiteScriptingAttack
+namespace HackersWebApp
 {
     public class RouteConfig
     {
@@ -16,7 +16,7 @@ namespace CrossSiteScriptingAttack
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Account", action = "unsecured", id = UrlParameter.Optional }
+                defaults: new { controller = "Hack", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
